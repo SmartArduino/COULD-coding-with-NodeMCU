@@ -27,7 +27,7 @@ tmr.alarm(3, 5000, 1, function()
 	elseif flagClientTcpConnected==false then
 	print("Try connect Server");
 	conn=net.createConnection(net.TCP, false) 
-	conn:connect(7500,"198.199.94.16");--182.92.178.210
+	conn:connect(7500,"182.92.178.210");--182.92.178.210  --198.199.94.16
 		conn:on("connection",function(c)
 			print("TCPClient:conneted to server");
 			conn:send("cmd=subscribe&topic="..deviceID.."\r\n");

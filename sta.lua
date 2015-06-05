@@ -8,7 +8,7 @@
 
 print("Ready to Set up wifi mode")
 wifi.setmode(wifi.STATION)
-local ssid = "MERCURY_1013"
+local ssid = "Doit"
 local psw = "123456789"
 print("Conneting to "..ssid)
 wifi.sta.config(ssid,psw)--ssid and password
